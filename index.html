@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/prueba.js">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<body>
+    <!-- NAV GENERAL -->
+    <nav class="navbar navbar-expand-md bg-success navbar-dark">
+      <div class="container-fluid">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+        <!-- NAV MENU PARTE IZQUIERDA -->
+        <div class="dropdown-menu">
+    <!-- ICONO INICIO -->
+        <a class="inicio dropdown-item" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            class="inicio icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" 
+            stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" 
+            stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <polyline points="5 12 3 12 12 3 21 12 19 12" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+            </svg> Inicio </a>
+          <!--ICONO REGISTRO-->
+          <a class="ingresoRegistro dropdown-item" href="ingresar.html">
+             <svg xmlns="http://www.w3.org/2000/svg" 
+                class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" 
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" 
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+          </svg> Ingresar/Registrarse </a>
+          </div>
+           <!-- NAV DERECHA -->
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+          <!-- CARRITO-->
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="carrito.html"> 
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-shopping-cart" width="24" 
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <circle cx="6" cy="19" r="2" />
+                  <circle cx="17" cy="19" r="2" />
+                  <path d="M17 17h-11v-14h-2" />
+                  <path d="M6 5l14 1l-1 7h-13" />
+                </svg> Carrito </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+         <!--LOGO CENTRO-->
+         <section class="gradient-form" id="bg">
+         <header class="header">
+        <a href="index.html">
+            <img class=" header_logo rounded-circle" src="img/NuevoLogoCentro.png" style="width: 400px">
+        </a>
+         </header> 
+         <!-- FILTRO --> 
+         <div class="container">
+          <div class="row">
+             <div class="col-lg-12 text-center my-2">
+                    <h1 id="ProductosTitulo">Productos</h1>
+             </div>
+          </div>
+          <div class="portfolio-menu mt-2 mb-4">
+             <ul>
+                <li class="btn btn-outline-success active" data-filter="*">TODOS</li>
+                <li class="btn btn-outline-success" data-filter=".ma">MACETEROS</li>
+                <li class="btn btn-outline-success" data-filter=".fl">FLORES</li>
+                <li class="btn btn-outline-success" data-filter=".ar">ARBUSTOS</li>
+                <li class="btn btn-outline-success text" data-filter=".ti">TIERRA</li>
+             </ul>
+          </div>
+          <!-- PRODUCTOS-->
+      <div class="store">
+        <div class="producto ma">
+          <div class="feature">
+            <img src="img/ProductoN°1.jpg" width="100%"/>
+          </div>
+          <div class="store-info">
+            <div class="logo">
+              <img src="img/ProductoN°1.jpg" width="100%"/>
+            </div>
+            <div class="title">
+              <div class="text">
+                Producto
+              </div>
+              <div class="detail">
+                <small>$14.000</small>
+                <div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <p class="btn-add">
+                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="producto ma">
+            <div class="feature">
+              <img src="img/ProductoN°1.jpg" width="100%"/>
+            </div>
+            <div class="store-info">
+              <div class="logo">
+                <img src="img/ProductoN°1.jpg" width="100%"/>
+              </div>
+              <div class="title">
+                <div class="text">
+                  Producto
+                </div>
+                <div class="detail">
+                  <small>$14.000</small>
+                  <div class="qty mt-5">
+                    <span class="minus bg-dark">-</span>
+                    <input type="number" class="count" name="qty" value="1">
+                    <span class="plus bg-dark">+</span>
+                    <p class="btn-add">
+                      <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="producto fl">
+              <div class="feature">
+                <img src="img/ProductoN°1.jpg" width="100%"/>
+              </div>
+              <div class="store-info">
+                <div class="logo">
+                  <img src="img/ProductoN°1.jpg" width="100%"/>
+                </div>
+                <div class="title">
+                  <div class="text">
+                    Producto
+                  </div>
+                  <div class="detail">
+                    <small>$14.000</small>
+                    <div class="qty mt-5">
+                      <span class="minus bg-dark">-</span>
+                      <input type="number" class="count" name="qty" value="1">
+                      <span class="plus bg-dark">+</span>
+                      <p class="btn-add">
+                        <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="producto fl">
+                <div class="feature">
+                  <img src="img/ProductoN°1.jpg" width="100%"/>
+                </div>
+                <div class="store-info">
+                  <div class="logo">
+                    <img src="img/ProductoN°1.jpg" width="100%"/>
+                  </div>
+                  <div class="title">
+                    <div class="text">
+                      Producto
+                    </div>
+                    <div class="detail">
+                      <small>$14.000</small>
+                      <div class="qty mt-5">
+                        <span class="minus bg-dark">-</span>
+                        <input type="number" class="count" name="qty" value="1">
+                        <span class="plus bg-dark">+</span>
+                        <p class="btn-add">
+                          <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="producto ar">
+                  <div class="feature">
+                    <img src="img/ProductoN°1.jpg" width="100%"/>
+                  </div>
+                  <div class="store-info">
+                    <div class="logo">
+                      <img src="img/ProductoN°1.jpg" width="100%"/>
+                    </div>
+                    <div class="title">
+                      <div class="text">
+                        Producto
+                      </div>
+                      <div class="detail">
+                        <small>$14.000</small>
+                        <div class="qty mt-5">
+                          <span class="minus bg-dark">-</span>
+                          <input type="number" class="count" name="qty" value="1">
+                          <span class="plus bg-dark">+</span>
+                          <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="producto ar">
+                    <div class="feature">
+                      <img src="img/ProductoN°1.jpg" width="100%"/>
+                    </div>
+                    <div class="store-info">
+                      <div class="logo">
+                        <img src="img/ProductoN°1.jpg" width="100%"/>
+                      </div>
+                      <div class="title">
+                        <div class="text">
+                          Producto
+                        </div>
+                        <div class="detail">
+                          <small>$14.000</small>
+                          <div class="qty mt-5">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                            <p class="btn-add">
+                              <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="producto ti">
+                      <div class="feature">
+                        <img src="img/ProductoN°1.jpg" width="100%"/>
+                      </div>
+                      <div class="store-info">
+                        <div class="logo">
+                          <img src="img/ProductoN°1.jpg" width="100%"/>
+                        </div>
+                        <div class="title">
+                          <div class="text">
+                            Producto
+                          </div>
+                          <div class="detail">
+                            <small>$14.000</small>
+                            <div class="qty mt-5">
+                              <span class="minus bg-dark">-</span>
+                              <input type="number" class="count" name="qty" value="1">
+                              <span class="plus bg-dark">+</span>
+                              <p class="btn-add">
+                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="producto ti">
+                        <div class="feature">
+                          <img src="img/ProductoN°1.jpg" width="100%"/>
+                        </div>
+                        <div class="store-info">
+                          <div class="logo">
+                            <img src="img/ProductoN°1.jpg" width="100%"/>
+                          </div>
+                          <div class="title">
+                            <div class="text">
+                              Producto
+                            </div>
+                            <div class="detail">
+                              <small>$14.000</small>
+                              <div class="qty mt-5">
+                                <span class="minus bg-dark">-</span>
+                                <input type="number" class="count" name="qty" value="1">
+                                <span class="plus bg-dark">+</span>
+                                <p class="btn-add">
+                                  <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="producto fl">
+                          <div class="feature">
+                            <img src="img/ProductoN°1.jpg" width="100%"/>
+                          </div>
+                          <div class="store-info">
+                            <div class="logo">
+                              <img src="img/ProductoN°1.jpg" width="100%"/>
+                            </div>
+                            <div class="title">
+                              <div class="text">
+                                Producto
+                              </div>
+                              <div class="detail">
+                                <small>$14.000</small>
+                                <div class="qty mt-5">
+                                  <span class="minus bg-dark">-</span>
+                                  <input type="number" class="count" name="qty" value="1">
+                                  <span class="plus bg-dark">+</span>
+                                  <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="producto fl">
+                            <div class="feature">
+                              <img src="img/ProductoN°1.jpg" width="100%"/>
+                            </div>
+                            <div class="store-info">
+                              <div class="logo">
+                                <img src="img/ProductoN°1.jpg" width="100%"/>
+                              </div>
+                              <div class="title">
+                                <div class="text">
+                                  Producto
+                                </div>
+                                <div class="detail">
+                                  <small>$14.000</small>
+                                  <div class="qty mt-5">
+                                    <span class="minus bg-dark">-</span>
+                                    <input type="number" class="count" name="qty" value="1">
+                                    <span class="plus bg-dark">+</span>
+                                    <p class="btn-add">
+                                      <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Agregar</a></p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+    </div>
+
+
+  </section>
+  </body>
+  </html>

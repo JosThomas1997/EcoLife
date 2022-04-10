@@ -1,0 +1,179 @@
+:root {
+    --primario: #00e1ff;
+    --primarioOscuro: #0357a5;
+    --secundario: #ff7300;
+    --secundarioOscuro: rgb(182, 55, 5);
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo{
+margin: 3rem 0;
+height: 200px;
+width: 200px;
+} 
+
+
+#bg{
+    background-image: url('../img/jardin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 379px;
+}
+
+#ProductosTitulo{
+    color: white;
+}
+
+body{
+    background:ghostwhite;
+  }
+
+  .store{ 
+    width:1024px;
+    margin:auto;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .producto{
+    display:flex;
+    flex-direction:column;
+    width: calc(100% / 5 - 20px);
+    margin:10px;
+    background:white;
+  }
+
+  .feature{
+      width:100%;
+      height:170px;
+  }
+
+   img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      .store-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 30px 5px;
+      }
+      .logo {
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      top: -49px;
+      border-radius: 50px;
+      overflow: hidden;
+      border: 5px solid white;
+      }
+
+      .portfolio-menu{
+        text-align:center;
+    }
+    .portfolio-menu ul li{
+        display:inline-block;
+        margin:0;
+        list-style:none;
+        padding:10px 15px;
+        cursor:pointer;
+        -webkit-transition:all 05s ease;
+        -moz-transition:all 05s ease;
+        -ms-transition:all 05s ease;
+        -o-transition:all 05s ease;
+        transition:all .5s ease;
+    }
+    
+    .portfolio-item{
+        /*width:100%;*/
+    }
+    .portfolio-item .item{
+        /*width:303px;*/
+        float:left;
+        margin-bottom:10px;
+    }
+
+    .qty .count {
+        color: #000;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        padding: 0 2px
+        ;min-width: 15px;
+        text-align: center;
+    }
+    .qty .plus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 15px;
+        height: 15px;
+        font: 15px/1 Arial,sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        }
+    .qty .minus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 15px;
+        height: 15px;
+        font: 15px/1 Arial,sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        background-clip: padding-box;
+    }
+    div {
+        text-align: center;
+    }
+    .minus:hover{
+        background-color: #717fe0 !important;
+    }
+    .plus:hover{
+        background-color: #717fe0 !important;
+    }
+    /*Prevent text selection*/
+    span{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    input{  
+        border: 0;
+        width: 2%;
+    }
+    nput::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input:disabled{
+        background-color:white;
+    }
+             
